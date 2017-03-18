@@ -15,7 +15,7 @@ qr_liste = [
 	{"q":"Dans quelle ville la colonne a-t-elle été photographié en 1950 avec le frère Branham ?","p":"\n1- Tucson, Arizona \n2- Jeffersonville, Indianna \n3- Houston, Texas","j":3,"r":"3- Houston, Texas"},
 	{"q":"Quel est l'animal qui est le petit ami de frère Branham","p":"\n1- l'Aigle \n2- La colombe \n3- Le rouge-gorge","j":3,"r":"3- Le rouge-gorge"},
 	{"q":"J'ai peur des bruits de tonnerres, je veux un Dieu avec une peau","p":"\n1- Elie le Tshisbite \n2- Le petit Junior \n3- Jim Poole","j":2,"r":"2- Le petit Junior"},
-	{"q":"Qui fut le premier pasteur associé de frère Branham au Branham Tabernacle","p":"\n1- Frère Orman Neville\n2- Frère DeArk \n3- Frère Graham Snelling","j":2,"r":"2- Le petit Junior"}
+	{"q":"Qui fut le premier pasteur associé de frère Branham au Branham Tabernacle","p":"\n1- Frère Orman Neville\n2- Frère DeArk \n3- Frère Graham Snelling","j":2,"r":"2- Le petit Junior"},
 	{"q":"En quelle année frère Joseph a-t-il fondé VoGR ?","p":"\n1- 1990\n2- 1981 \n3- 1984","j":2,"r":"2- 1981"}
 ]
 

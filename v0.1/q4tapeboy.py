@@ -4,20 +4,26 @@
 # Import the random module
 
 import random
+import json
 
 
+# Liste de questions vide au depart"
 
-# Créer une liste de dictionnaires contenant les "questions et reponses"
-qr_liste = [
-	{"q":"Quelle est la date de naissance de frère Branham ?","p":"\n1- 06 Avril 1906 \n2- 06 Mai 1909 \n3- 06 Avril 1909","j":3,"r":"3- 06 Avril 1909"},
-	{"q":"Quelle est le nom des parents de frère Branham ?","p":"\n1- Charles et Meda Branham \n2- Charles et Ella Branham \n3- Charlin et Helena Branham","j":2,"r":"2- Charles et Ella Branham"},
-	{"q":"En quelle année décéda Hope et Sharon Rose Branham ?","p":"\n1- 1937 \n2- 1933 \n3- 1955","j":1,"r":"1- 1937"},
-	{"q":"Dans quelle ville la colonne a-t-elle été photographié en 1950 avec le frère Branham ?","p":"\n1- Tucson, Arizona \n2- Jeffersonville, Indianna \n3- Houston, Texas","j":3,"r":"3- Houston, Texas"},
-	{"q":"Quel est l'animal qui est le petit ami de frère Branham","p":"\n1- l'Aigle \n2- La colombe \n3- Le rouge-gorge","j":3,"r":"3- Le rouge-gorge"},
-	{"q":"J'ai peur des bruits de tonnerres, je veux un Dieu avec une peau","p":"\n1- Elie le Tshisbite \n2- Le petit Junior \n3- Jim Poole","j":2,"r":"2- Le petit Junior"},
-	{"q":"Qui fut le premier pasteur associé de frère Branham au Branham Tabernacle","p":"\n1- Frère Orman Neville\n2- Frère DeArk \n3- Frère Graham Snelling","j":2,"r":"2- Le petit Junior"},
-	{"q":"En quelle année frère Joseph a-t-il fondé VoGR ?","p":"\n1- 1990\n2- 1981 \n3- 1984","j":2,"r":"2- 1981"}
-]
+qr_liste = []
+
+#Definition de la fonction permettant d'importer les questions depuis le fichier questions.js
+
+def questions_import(nom_fichier_json):
+	"""Cette fonction permet de charger les questions depuis le fichier json"""
+	global qr_liste
+	with open(nom_fichier_json) as f:
+		donnees = json.load(f)
+		for entree in donnees:
+			qr_liste.append(entree)
+
+# On importe les question dans une liste (qr_liste)
+
+questions_import("questions.json")
 
 # Nombre de points
 points = 0
@@ -25,6 +31,7 @@ points = 0
 # Nombre d'essais
 
 essais = 0
+
 
 
 # Definition de la fonction qui génére une question et réponse
